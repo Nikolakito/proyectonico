@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(red, white);
+}
+header {
+  display: flex;
+  justify-content: right;
+  border-bottom: solid 2px black;
+  padding-bottom: 1em;
+}
+input {
+  background-color: red;
+  color: white;
+}
+button {
+  background-color: red;
+  color: white;
+}
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 1em;
+}
+#t {
+  margin-top: -4px;
+}
+img {
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  background: black;
+  
+}
+img:hover{
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+@keyframes zoom-in-zoom-out{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.05, 1.05);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+#grilla {  
+  display: grid;  
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-auto-rows: minmax(300px, 100px);
+}
+li {
+  display: grid;  
+  border: 10px solid red;
+  height: 150px;
+  width: 200px;
+  margin-top: 5%;
+  list-style: none;
+}
+#principal {
+  display: flex;
+  justify-content: normal;
+}
+button {
+  margin-top: 1em;
+}
+.nashe{
+    margin-top: -0.5em;
+}
+button:hover {
+  cursor: pointer;
+  border-color: rgb(68, 1, 1);
+}
+footer {
+  display: grid;
+  border-top: solid 2px black;
+}
+a {
+  display: flex;
+  justify-content: center;
+  color: red;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+  align-content: center;
+}
+/*
+@media (max-width: 475px) {
+  #grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/*
+@media (min-width: 900px) {
+  #grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1300px) {
+    #grilla {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+*/
